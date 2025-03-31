@@ -21,7 +21,7 @@
                 },
                 {
                     "type": "origins:execute_command",
-                    "command": "scale set pehkui:hitbox_height 0.83 @s"
+                    "command": "scale set pehkui:hitbox_height 1.43 @s"
                 },
                 {
                     "type": "origins:execute_command",
@@ -55,7 +55,7 @@
                 },
                 {
                     "type": "origins:execute_command",
-                    "command": "scale set pehkui:hitbox_height 0.83 @s"
+                    "command": "scale set pehkui:hitbox_height 1.43 @s"
                 },
                 {
                     "type": "origins:execute_command",
@@ -88,7 +88,7 @@
                 },
                 {
                     "type": "origins:execute_command",
-                    "command": "scale set pehkui:hitbox_height 0.83 @s"
+                    "command": "scale set pehkui:hitbox_height 1.43 @s"
                 },
                 {
                     "type": "origins:execute_command",
@@ -100,5 +100,26 @@
                 }
             ]
         }
+    },
+    "dismount": {
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:actor_action",
+            "action": {
+                "type": "origins:delay",
+                "action": {
+                    "type": "origins:dismount"
+                },
+                "ticks": 1
+            }
+        },
+        "bientity_condition": {
+            "type": "origins:target_condition",
+            "condition": {
+                "type": "origins:living"
+            }
+        },
+        "action_result": "success",
+        "priority": 0
     }
 }
