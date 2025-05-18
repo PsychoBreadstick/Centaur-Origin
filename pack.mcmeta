@@ -1,9 +1,10 @@
 {
     "pack": {
-        "name": "Centaur",
+        "name": "My Pack",
         "id": "centaur",
-        "pack_format": 18,
+        "meta": "Centaur",
         "version": "1.0.0",
-        "description": "By PsychoBreadstick"
+        "description": "By PsychoBreadstick",
+        "pack_format": 18
     }
 }
