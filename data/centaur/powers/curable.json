@@ -1,0 +1,32 @@
+{
+    "name": "Curable",
+    "description": "Fortunately, as a zombified centaur, your undead nature can be cured much like how zombie villagers are cured.",
+    "condition": {
+        "type": "origins:status_effect",
+        "effect": "minecraft:weakness"
+    },
+    "type": "origins:action_on_item_use",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.zombie_villager.converted",
+                "volume": 1,
+                "pitch": 1
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "origin set @s origins:origin centaur:centaur"
+            }
+        ]
+    },
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:golden_apple"
+        }
+    },
+    "trigger": "finish",
+    "priority": 0
+}

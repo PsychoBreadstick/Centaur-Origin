@@ -1,0 +1,8 @@
+{
+    "origins": [
+        "centaur:centaur",
+        "centaur:zombified_centaur",
+        "centaur:skeletonized_centaur"
+    ],
+    "enabled": true
+}
