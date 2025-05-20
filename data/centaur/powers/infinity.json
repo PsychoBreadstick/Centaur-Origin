@@ -1,0 +1,10 @@
+{
+    "name": "Infinity",
+    "description": "Well, it seems like being skeletonized has the perk of giving you built-in infinity, just like a skeleton.",
+    "type": "origins:modify_enchantment_level",
+    "enchantment": "minecraft:infinity",
+    "modifier": {
+        "operation": "set_total",
+        "value": 1
+    }
+}

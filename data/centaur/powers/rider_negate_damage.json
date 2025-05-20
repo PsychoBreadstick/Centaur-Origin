@@ -1,0 +1,33 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "dismount_remove": {
+        "condition": {
+            "type": "origins:riding",
+            "bientity_condition": {
+                "type": "origins:target_condition",
+                "condition": {
+                    "type": "origins:entity_type",
+                    "entity_type": "player"
+                }
+            }
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "falling_action": {
+            "type": "origins:remove_power",
+            "power": "centaur:rider_negate_damage"
+        }
+    },
+    "fall_height": {
+        "condition": {
+            "type": "origins:fall_distance",
+            "comparison": "<=",
+            "compare_to": 6
+        },
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:from_falling"
+        }
+    }
+}
